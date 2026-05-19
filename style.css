@@ -1,0 +1,521 @@
+
+
+
+.animation {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: relative;
+    animation: example 2s infinite;
+}
+  
+@keyframes example {
+    0%,
+    100% {
+      left: 0;
+    }
+  
+    50% {
+      left: 200px;
+    }
+}
+
+.aboutMe{
+    font-weight: 1000;
+}
+
+body{
+    position: relative;
+    isolation: isolate; 
+    background-color: ;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/drawing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Adjust transparency here (0.0 to 1.0) */
+    z-index: -1;
+    
+
+}
+
+
+
+.bodyBottom{
+    margin-top: 10px;
+    
+}
+
+.bottomBoxes{
+    height: 100px;
+    background: #67690b;
+    /* border: 2px solid antiquewhite; */
+    padding: 10px;
+    width: 400px;
+    border-radius: 55px;
+    font-size: 50px;
+    /* text-shadow: 2px 2px 2px #67690b; */
+    text-align: center;
+    line-height: .7;
+    /* font-family: 'MyCustomFont'; */
+    /* box-shadow: -1px -1px 10px black; */
+    box-shadow: inset 4px 4px 8px rgba(28, 12, 7, 0.39), inset -2px -2px 8px rgb(9 28 7 / 41%);
+    color: rgba(28, 12, 7, 0.41);
+    text-shadow: 1px 1px #d0cc0a;
+    justify-content: center;
+}
+
+.bottomHeader{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+.boxedBox{
+    display: flex;
+    justify-content: center;
+}
+
+.examplesHeader{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 0;
+}
+
+.exitButton{
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 20px;
+    writing-mode: horizontal-tb;
+}
+
+.exitButton:hover{
+    font-size: 23px;
+    color: #281419;
+
+}
+
+.folioProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 160px;
+    width: 400px;
+    color: #a6a313;
+   
+
+}
+
+
+.folioInset{
+    padding: 45px;
+    color: #281419;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.folioInset:hover{
+    font-size: 27px;
+    color:antiquewhite;
+
+}
+
+.folioWork{
+    
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.folioExamples{
+    width: 70%;
+    margin-top: 30px;
+    color: #a6a313;
+    
+}
+
+.marginExample{
+    padding: 30px;
+}
+
+
+.fullPage{
+    margin-top: 20px;
+    overflow: scroll;
+    display: flex;
+    width: 100%;
+    /* border-radius: 10px; */
+
+}
+
+.headerSocials a{
+    text-decoration: none;
+    color: #a6a313;
+}
+
+.introHeader{
+    margin-top: 30px;
+    align-items: center;
+    left: 350px;
+    font-size: 25px;
+    font-family: "MyCustomFont";
+    color: #281419;
+
+
+    
+    
+
+}
+
+img{
+    overflow: hidden;
+}
+
+
+.leftPanel{
+    height: 500px;
+    overflow-y: scroll;
+    width: 48%;
+    /* flex: 1; */
+    /* font-family: "MyCustomFont", sans-serif; */
+    top: 0;
+    background-color: #a6a313;
+    border: 2px solid #a6a313;
+    border-radius: 0px 0px 0px 10px;
+
+}
+
+
+
+
+
+.liu-jian-mao-cao-regular {
+    font-family: "Liu Jian Mao Cao", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.midBannerText{
+    animation: floatText 22s infinite;
+
+}
+
+@keyframes floatText {
+
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+        transform: translateX(100%);
+    }
+
+    
+}
+
+.midTitles{
+    font-family: "MyCustomFont";
+    /* padding: 10px; */
+    color: #a6a313;
+    font-size: 65px;
+    text-align: right;
+    padding-top: 80px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    
+    width: 25%;
+}
+  
+
+.midBanner{
+    padding: 30px;
+
+}
+
+
+.midSection{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    margin-left: 40px;
+    box-shadow: 2px 2px 2px #281419;
+    /* padding: px; */
+    /* background: radial-gradient(circle at 0 0, transparent 550px, #fff 21px); */
+    /* position: relative; */
+   
+}
+
+.midSectionText{
+    font-size: 175px;
+    font-style: italic;
+    color: #a6a313;
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 10px;
+    text-align: left;
+    /* filter: drop-shadow(0 0 0.75rem rgb(9, 28, 7)); */
+    text-shadow: 2px 2px 1px #281419ad;
+
+}
+
+.midSectionText:hover{
+    /* filter: drop-shadow(0 0 0.75rem crimson); */
+    text-shadow: 2px 2px 1px #ca5b77;
+}
+
+
+  
+
+
+.navHeader{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    display: inline-flex;
+    font-family: "MyCustomFont";
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none ;
+    border-left-style: none;
+    border-color: #0D597D;
+    border-width: 2px;
+    background-color: #fff;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: #281419;
+}
+
+.navHeader .headerItem1{
+    position: absolute;
+    left: 15px;
+}
+
+.navHeader .headerSocials{
+    position: absolute;
+    right: 25px;
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+    
+}
+
+
+.noise {
+    /* ... */
+    background:
+        #a6a313;
+      url(images/);
+}
+
+.notifBanner{
+    background-color: #C5C0D0;
+    color: white;
+    width: 100%;
+    z-index: 10;
+    padding: 10px;
+    left: -10;
+    margin-top: 30px;
+}
+
+p{
+    margin: inherit;
+    
+}
+
+.profileImg{
+    border-radius: 100px;
+    border: 2px solid black;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+
+   
+}
+
+.profileImg img{
+    position: relative;
+    top: 30px;
+    left: 25px;
+    
+    
+}
+
+.profileName{
+    padding-top: 70px;
+    font-family: "MyCustomFont";
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.projectHeaders{
+    font-family: "MyCustomFont";
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+.pressed-emboss {
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 
+      inset 4px 4px 8px rgba(0, 0, 0, 0.15),   /* Dark top-left inner shadow */
+      inset -4px -4px 8px rgba(255, 255, 255, 0.8); /* Light bottom-right inner shadow */
+  }
+
+/* nav{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: auto;
+    z-index: 100;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: space-around;
+   
+    
+} */
+
+@font-face {
+    font-family: 'MyCustomFont'; 
+    src: url('font/Myfont-Regular.ttf') format('truetype'),
+
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+
+.rightPanel{
+    height: 502px;
+    width: 50%;
+    overflow: scroll ;
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-shrink: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #281419;
+    border-right: 2px solid #a6a313;
+    border-bottom: 2px solid #a6a313;
+    border-left: 2px solid #a6a313;
+    border-radius: 0px 0px 10px 0px;
+
+}
+
+/* .sidePanel{
+    width: 20%;
+    height:auto;
+    background-color: #a6a313;
+    border-right: 2px solid #281419
+} */
+
+/* ..SidePaneInset{
+
+    width:120px;
+    height:100vh;
+    right: 0;
+    top: 0;
+    background: #432e6f;
+    border: 2px solid color: #622D90;
+    padding: 25px; 
+    position: relative; 
+    font-family: MyCustomFont;
+
+} */
+
+/* .SidePaneInset{
+    font-size:100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    bottom: 0;
+
+} */
+
+.sideHeader{
+    writing-mode: vertical-rl; 
+    text-orientation: sideways;
+    position: absolute;
+    right: 50px ;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+
+
+}
+
+.summaryText{
+    
+    margin-top: -30px; 
+  
+}
+
+.summaryText li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin-top: -30px;
+    /* letter-spacing: 2px; */
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
+}
+
+.topHeader h5{
+    margin-bottom: -45px;
+
+}
+
+.topandBottom{
+    width: 50%;
+
+
+
+
+}
+
+
+
+.workCategories{
+    font-family: "MyCustomFont";
+    align-items: center;
+    font-size: 16px;
+}
+
+.workSummaries{
+    margin-top: -60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.whatIdo{
+    font-size: 20px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    text-align: center;
+    padding-top: 0px;
+}
+
+
+/* .hiddenWindow{
+    /* display: none; 
+    font-family: ;
+} */
