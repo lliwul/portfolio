@@ -1,0 +1,73 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5500/Final%20Project:%20Portfolio/noise.html
+Subject: 
+Date: Thu, 14 May 2026 00:40:04 -0500
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--wI91Bav1hz5fIMnSo45jbl5jf3WtcqHdIKIEMpiYjc----"
+
+
+------MultipartBoundary--wI91Bav1hz5fIMnSo45jbl5jf3WtcqHdIKIEMpiYjc----
+Content-Type: text/html
+Content-ID: <frame-ADEF09596A51AFF0AE0E97EF9A649653@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/Final%20Project:%20Portfolio/noise.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body><svg viewBox=3D"0 0 600 600" xmlns=3D"http://www.w3.=
+org/2000/svg" style=3D"width: 600px;
+  height: 600px;">
+
+  <filter id=3D"noiseFilter">
+    <feTurbulence type=3D"fractalNoise" baseFrequency=3D"0.65" numOctaves=
+=3D"3" stitchTiles=3D"stitch"></feTurbulence>
+  </filter>
+
+  <rect width=3D"100%" height=3D"100%" filter=3D"url(#noiseFilter)"></rect>
+<!-- Code injected by live-server -->
+<script>
+	//   &lt;-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets =3D [].slice.call(document.getElementsByTagName("link"));
+				var head =3D document.getElementsByTagName("head")[0];
+				for (var i =3D 0; i &lt; sheets.length; ++i) {
+					var elem =3D sheets[i];
+					var parent =3D elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel =3D elem.rel;
+					if (elem.href &amp;&amp; typeof rel !=3D "string" || rel.length =3D=3D=
+ 0 || rel.toLowerCase() =3D=3D "stylesheet") {
+						var url =3D elem.href.replace(/(&amp;|\?)_cacheOverride=3D\d+/, '');
+						elem.href =3D url + (url.indexOf('?') &gt;=3D 0 ? '&amp;' : '?') + '_=
+cacheOverride=3D' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol =3D window.location.protocol =3D=3D=3D 'http:' ? 'ws://' : =
+'wss://';
+			var address =3D protocol + window.location.host + window.location.pathna=
+me + '/ws';
+			var socket =3D new WebSocket(address);
+			socket.onmessage =3D function (msg) {
+				if (msg.data =3D=3D 'reload') window.location.reload();
+				else if (msg.data =3D=3D 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage &amp;&amp; !sessionStorage.getItem('IsThisFirstTime_L=
+og_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSoc=
+ket for Live-Reloading.');
+	}
+	//=20
+</script>
+</svg></body></html>
+------MultipartBoundary--wI91Bav1hz5fIMnSo45jbl5jf3WtcqHdIKIEMpiYjc------
