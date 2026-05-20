@@ -1,13 +1,13 @@
 
 
 
-.animation {
+/* .animation {
     width: 10px;
     height: 10px;
     background-color: red;
     position: relative;
     animation: example 2s infinite;
-}
+} */
   
 @keyframes example {
     0%,
@@ -23,6 +23,7 @@
 .aboutMe{
     font-weight: 1000;
 }
+
 
 body{
     position: relative;
@@ -44,6 +45,7 @@ body::before{
     background-repeat: no-repeat;
     opacity: 0.2; /* Adjust transparency here (0.0 to 1.0) */
     z-index: -1;
+    left: -5px;
     
 
 }
@@ -143,16 +145,13 @@ body::before{
     
 }
 
-.folioExamples{
-    width: 70%;
-    margin-top: 30px;
-    color: #a6a313;
+#folioExamples{
+    display: flex;
+    justify-content: center;
+
     
 }
 
-.marginExample{
-    padding: 30px;
-}
 
 
 .fullPage{
@@ -164,8 +163,23 @@ body::before{
 
 }
 
+.happyball{
+    margin: auto;
+    border-radius: 0 0 1200px 1200px;
+    width: 1200px;
+    height: 600px;
+    background-color: orange;
+    box-shadow: 0 0 35px 5px yellow,0 0 25px 10px rgb(255, 119, 0) inset
+}
+
 .headerSocials a{
     text-decoration: none;
+    color: #a6a313;
+}
+
+.hiddenWindow{
+    width: 70%;
+    margin-top: 30px;
     color: #a6a313;
 }
 
@@ -211,15 +225,34 @@ img{
     font-style: normal;
 }
 
+.marginExample{
+    padding: 30px;
+}
+
+.midwayBanner{
+    margin-top: 50px;
+    background-color: #ca5b77;
+    padding: 50px;
+    font-family: "MyCustomFont";
+    font-size: 30px;
+}
+
 .midBannerText{
     animation: floatText 22s infinite;
+
+}
+
+.midwayPara{
+    padding: 95px;
+    color: white;
+    text-align: center;
 
 }
 
 @keyframes floatText {
 
     from {
-      transform: translateX(-100%);
+      transform: translateX(-20%);
     }
   
     to {
@@ -375,6 +408,9 @@ p{
     padding-bottom: 0;
 }
 
+
+
+
 .pressed-emboss {
     background-color: #e0e0e0;
     border-radius: 12px;
@@ -413,6 +449,7 @@ p{
     /* position: fixed; */
     top: 0;
     display: flex;
+    
     justify-content: center;
     align-items: top;
     flex-shrink: 0;
