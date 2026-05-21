@@ -126,7 +126,7 @@ body::before{
 
 .folioInset{
     padding: 45px;
-    color: antiquewhite;
+    color: #F0EE8B;
     font-size: 25px;
     margin: 0;
     text-align: center;
@@ -135,7 +135,7 @@ body::before{
 
 .folioInset:hover{
     font-size: 28px;
-    color:antiquewhite;
+    /* color:antiquewhite; */
 
 }
 
@@ -194,7 +194,7 @@ body::before{
     left: 350px;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: antiquewhite;
+    color: #F0EE8B;
 
 
     
