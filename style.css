@@ -165,11 +165,12 @@ body::before{
 
 .happyball{
     margin: auto;
-    border-radius: 0 0 1200px 1200px;
+    border-radius: 1200px 1200px 0 0;
     width: 1200px;
     height: 600px;
     background-color: orange;
-    box-shadow: 0 0 35px 5px yellow,0 0 25px 10px rgb(255, 119, 0) inset
+    box-shadow: 0 0 35px 5px yellow,0 0 25px 10px rgb(255, 119, 0) inset;
+    z-index: -10;
 }
 
 .headerSocials a{
@@ -233,8 +234,9 @@ img{
     margin-top: 50px;
     background-color: #ca5b77;
     padding: 50px;
-    font-family: "MyCustomFont";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
+    z-index: 10;
 }
 
 .midBannerText{
@@ -506,7 +508,8 @@ p{
 
 .summaryText{
     
-    margin-top: -30px; 
+    margin-top: -30px;
+    text-align: justify; 
   
 }
 
@@ -516,6 +519,7 @@ p{
     margin-top: -30px;
     /* letter-spacing: 2px; */
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); */
+    text-align: justify;
 }
 
 .topHeader h5{
@@ -556,3 +560,10 @@ p{
     /* display: none; 
     font-family: ;
 } */
+
+.verylugif{
+    position: absolute;
+    right: 20px;
+    /* border: 3px; */
+    top: 480px;
+}
